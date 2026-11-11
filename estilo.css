@@ -1,0 +1,27 @@
+body {
+    background-color: blanchedalmond;
+}
+
+#contenedorautor {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  margin: 2em auto;
+  border: #ca7e4b solid 14px;
+  width: fit-content;
+}
+
+.imagen {
+  height: 150px;
+  width: 300px;
+  margin: 0em auto;
+
+  #boton {
+  font-size: 1.5em;
+  font-family: "Henny Penny", system-ui;
+  font-style: normal;
+  background-color:  rgb(208, 115, 9);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  gap: 10px;
+  margin: 20px;
