@@ -5,10 +5,7 @@ const listaAutores = [
   "./assets/autor4.jpeg",
 ];
 const listaLibros = [
-  "./assets/img/tronco1.jpeg",
-  "./assets/img/tronco2.jpeg",
-  "./assets/img/tronco3.jpeg",
-  "./assets/img/tronco4.jpeg",
+  
 ];
 
 
@@ -26,7 +23,7 @@ function numeroAleatorio(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-const mensaje = document.getElementById("mensajeVictoria");
+const mensaje = document.getElementById("paginadestino");
 mensaje.style.display = "none";
 mensaje.textContent = "";
 
@@ -41,15 +38,21 @@ function generarBestia() {
   libro.src = listaLibros[indiceLibro];
 
 
-  // Comprobamos si las cuatro partes tienen el mismo índice
+    // Comprobamos si las cuatro partes tienen el mismo índice
   if (
-    indiceAutor === indiceLibro
+    indiceAutor === indiceLibro 
   ) {
-    mostrarVictoria();
+    paginadestino();
   } else {
 mensaje.style.display = "none";
   }
 }
+
+
+function paginadestino() {
+  mensaje.textContent = "<a href="autor1.html">autor1</a>";
+
+  mensaje.style.display = "block";
 
   const sonido = new Audio("./assets/img/musica/bruja.mp3");
   sonido.load()
