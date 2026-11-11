@@ -1,3 +1,3 @@
 # Documentación
 
-
+Para el web fanzine me gustaría hacer una biblioteca de poetas colombianos, ya que me gusta la poesía. Teniendo esta primera idea en mente pensé en crear un collage con pequeños fragmentos de poemas y elementos como papel antiguo, plumas, lapices y recortes alrededor del collage para darle una vibra como si fuera un diario. Luego, me acordé del bestiario de la entrega anterior y pensé en que lo podría poner en la parte inferior de la página principal justo después del collage. El bestiario tendrá dos elementos: un autor y un libro. Cuando el autor y el libro coincidan, automáticamente los llevará a una nueva página que habla exclusivamente sobre ese autor, con poemas y libros de este.
