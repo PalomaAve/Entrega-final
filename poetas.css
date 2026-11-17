@@ -288,6 +288,7 @@ body {
     padding: 90px 10%;
     background: var(--principal);
     color: white;
+    border-top: 2px solid var(--negro);
 }
 
 .fragmentos .etiqueta-seccion {
@@ -357,4 +358,25 @@ body {
     font-size: 21px;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+.pie-poeta {
+    background: var(--fondo);
+    padding: 35px 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-top: 2px solid var(--negro);
+}
+
+.pie-poeta a {
+    color: var(--negro);
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pie-poeta a:hover {
+    color: var(--principal);
 }
