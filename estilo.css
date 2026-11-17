@@ -130,3 +130,61 @@ body {
     font-size: 10px;
     letter-spacing: 3px;
 }
+
+.manifiesto {
+    padding: 90px 10%;
+    background-color: var(--negro);
+    color: var(--crema);
+    position: relative;
+    overflow: hidden;
+}
+
+.numero-seccion {
+    color: var(--amarillo);
+    font-size: 11px;
+    margin-bottom: 40px;
+}
+
+.manifiesto-contenido {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.manifiesto h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(45px, 6vw, 85px);
+    line-height: 0.95;
+}
+
+.manifiesto h2 span {
+    color: var(--rojo);
+    display: block;
+}
+
+.manifiesto-texto {
+    font-family: 'Special Elite', monospace;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.manifiesto-texto p {
+    margin-bottom: 20px;
+}
+
+.manifiesto-texto strong {
+    color: var(--amarillo);
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+}
+
+.manifiesto-decoracion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--rojo);
+    margin-top: 70px;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+}
