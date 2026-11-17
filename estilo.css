@@ -287,22 +287,28 @@ body {
 
 .bestiario-juego {
 
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     background: var(--papel);
     border: 3px solid var(--negro);
     box-shadow: 10px 10px var(--negro);
     padding: 40px;
     display: grid;
-    grid-template-columns: 1fr 70px 1fr;
+    grid-template-columns: minmax(0, 1fr) 70px minmax(0, 1fr);
     gap: 25px;
     align-items: center;
 }
 
 .elemento-aleatorio {
 
+    width: 100%;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 
 .numero-selector {
 
@@ -311,25 +317,50 @@ body {
     color: var(--rojo);
 }
 
+
 .etiqueta-bestiario {
 
     font-size: 11px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .tarjeta-aleatoria {
 
-    min-height: 190px;
-    padding: 20px;
+    width: 100%;
+    min-width: 0;
+    height: 300px;
+    padding: 15px;
     background: var(--crema);
     border: 2px dashed var(--negro);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     text-align: center;
     transform: rotate(-2deg);
     transition: 0.4s;
+}
+
+.tarjeta-aleatoria img {
+
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: 210px;
+    max-height: 210px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+.tarjeta-aleatoria p {
+
+    font-family: 'Special Elite', monospace;
+    font-size: 14px;
+    margin-top: 12px;
+    text-align: center;
 }
 
 .tarjeta-aleatoria span {
@@ -339,12 +370,6 @@ body {
     color: var(--rojo);
 }
 
-.tarjeta-aleatoria p {
-
-    font-family: 'Special Elite', monospace;
-    font-size: 15px;
-    margin-top: 10px;
-}
 
 .tarjeta-aleatoria.activa {
 
@@ -372,21 +397,26 @@ body {
     font-family: 'Special Elite', monospace;
 }
 
+
 .resultado span {
+
     font-size: 11px;
     color: var(--rojo);
 }
 
 .resultado p {
+
     margin-top: 10px;
     font-size: 14px;
 }
 
 .resultado.exito {
+
     background: #e5e8d7;
 }
 
 .resultado.error {
+
     background: #f3d5ce;
 }
 
@@ -394,6 +424,7 @@ body {
 #descubrir {
 
     grid-column: 1 / -1;
+    width: 100%;
     padding: 18px;
     font-family: 'Anton', sans-serif;
     font-size: 20px;
@@ -408,11 +439,13 @@ body {
     color: white;
 }
 
+
 #generarCombinacion:hover {
 
     background: var(--negro);
     transform: translateY(-4px);
 }
+
 
 #descubrir {
 
@@ -433,11 +466,43 @@ body {
     opacity: 0.6;
 }
 
+
+@media (max-width: 900px) {
+
+    .bestiario-juego {
+
+        grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+        gap: 15px;
+        padding: 25px;
+    }
+
+    .tarjeta-aleatoria {
+        height: 270px;
+    }
+
+    .tarjeta-aleatoria img {
+        max-width: 200px;
+        height: 185px;
+        max-height: 185px;
+    }
+
+    .simbolo {
+        font-size: 50px;
+    }
+
+}
+
+
 @media (max-width: 600px) {
 
     .bestiario-juego {
-        grid-template-columns: 1fr;
-        padding: 25px;
+
+        grid-template-columns: minmax(0, 1fr);
+        padding: 20px;
+    }
+
+    .elemento-aleatorio {
+        width: 100%;
     }
 
     .simbolo {
@@ -451,7 +516,19 @@ body {
     }
 
     .tarjeta-aleatoria {
-        min-height: 140px;
+        height: 250px;
+    }
+
+    .tarjeta-aleatoria img {
+        max-width: 200px;
+        height: 175px;
+        max-height: 175px;
+    }
+
+    #generarCombinacion,
+    #descubrir {
+        font-size: 18px;
+        padding: 15px;
     }
 
 }

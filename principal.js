@@ -19,45 +19,75 @@ const paginasAutores = [
   "autor4.html",
 ];
 
-const autor = document.getElementById("autor");
-const libro = document.getElementById("libro");
-const mensaje = document.getElementById("paginadestino");
-const boton = document.getElementById("boton");
+
+const tarjetaAutor = document.getElementById("autorAleatorio");
+const tarjetaLibro = document.getElementById("libroAleatorio");
+const mensaje = document.getElementById("resultado");
+
+const botonGenerar = document.getElementById("generarCombinacion");
+const botonDescubrir = document.getElementById("descubrir");
+
 
 let autorAleatorio = 0;
 let libroAleatorio = 0;
+let paginaEncontrada = "";
 
-mensaje.style.display = "none";
+botonDescubrir.disabled = true;
 
 function generarBestia() {
-
 
   autorAleatorio = Math.floor(Math.random() * listaAutores.length);
   libroAleatorio = Math.floor(Math.random() * listaLibros.length);
 
-  autor.src = listaAutores[autorAleatorio];
-  libro.src = listaLibros[libroAleatorio];
+  tarjetaAutor.innerHTML = `
+    <img src="${listaAutores[autorAleatorio]}" alt="Autor aleatorio">
+    <p>AUTOR ${autorAleatorio + 1}</p>
+  `;
 
-  mensaje.style.display = "none";
+  tarjetaLibro.innerHTML = `
+    <img src="${listaLibros[libroAleatorio]}" alt="Libro aleatorio">
+    <p>LIBRO ${libroAleatorio + 1}</p>
+  `;
+
+  tarjetaAutor.classList.add("activa");
+  tarjetaLibro.classList.add("activa");
+
+  mensaje.classList.remove("exito", "error");
+  paginaEncontrada = "";
+  botonDescubrir.disabled = true;
 
   if (autorAleatorio === libroAleatorio) {
-    paginadestino();
+
+    paginaEncontrada = paginasAutores[autorAleatorio];
+
+    mensaje.innerHTML = `
+      <span>¡EL DESTINO HA HABLADO!</span>
+      <p>Has encontrado la combinación correcta.</p>
+    `;
+
+    mensaje.classList.add("exito");
+
+    botonDescubrir.disabled = false;
+
+  } else {
+
+    mensaje.innerHTML = `
+      <span>LAS PALABRAS NO HAN COINCIDIDO</span>
+      <p>Esta vez no encontraste la combinación correcta. ¡Inténtalo de nuevo!</p>
+    `;
+
+    mensaje.classList.add("error");
   }
 }
 
-function paginadestino() {
+botonGenerar.addEventListener("click", generarBestia);
 
-  const pagina = paginasAutores[autorAleatorio];
+botonDescubrir.addEventListener("click", function() {
 
-  mensaje.innerHTML = `
-    <p>¡Has encontrado una combinación!</p>
-    <a href="${pagina}">DESCUBRIR AUTOR →</a>
-  `;
+  if (paginaEncontrada !== "") {
+    window.location.href = paginaEncontrada;
+  }
 
-  mensaje.style.display = "block";
-
-}
-
-boton.addEventListener("click", generarBestia);
+});
 
 generarBestia();
