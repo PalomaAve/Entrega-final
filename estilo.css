@@ -284,3 +284,174 @@ body {
 .recorte a:hover {
     text-decoration: underline;
 }
+
+.bestiario-juego {
+
+    background: var(--papel);
+    border: 3px solid var(--negro);
+    box-shadow: 10px 10px var(--negro);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.elemento-aleatorio {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.numero-selector {
+
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    color: var(--rojo);
+}
+
+.etiqueta-bestiario {
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.tarjeta-aleatoria {
+
+    min-height: 190px;
+    padding: 20px;
+    background: var(--crema);
+    border: 2px dashed var(--negro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotate(-2deg);
+    transition: 0.4s;
+}
+
+.tarjeta-aleatoria span {
+
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
+    color: var(--rojo);
+}
+
+.tarjeta-aleatoria p {
+
+    font-family: 'Special Elite', monospace;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.tarjeta-aleatoria.activa {
+
+    background: var(--amarillo);
+    transform: rotate(0deg) scale(1.03);
+}
+
+.simbolo {
+
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado {
+
+    grid-column: 1 / -1;
+    border-top: 2px dashed var(--negro);
+    border-bottom: 2px dashed var(--negro);
+    padding: 25px 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Special Elite', monospace;
+}
+
+.resultado span {
+    font-size: 11px;
+    color: var(--rojo);
+}
+
+.resultado p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.resultado.exito {
+    background: #e5e8d7;
+}
+
+.resultado.error {
+    background: #f3d5ce;
+}
+
+#generarCombinacion,
+#descubrir {
+
+    grid-column: 1 / -1;
+    padding: 18px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid var(--negro);
+    transition: 0.3s;
+}
+
+#generarCombinacion {
+
+    background: var(--azul);
+    color: white;
+}
+
+#generarCombinacion:hover {
+
+    background: var(--negro);
+    transform: translateY(-4px);
+}
+
+#descubrir {
+
+    background: var(--rojo);
+    color: white;
+}
+
+#descubrir:hover:not(:disabled) {
+
+    background: var(--negro);
+    transform: translateY(-4px);
+}
+
+#descubrir:disabled {
+
+    background: #999;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+
+    .bestiario-juego {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .simbolo {
+        font-size: 40px;
+    }
+
+    .resultado,
+    #generarCombinacion,
+    #descubrir {
+        grid-column: 1;
+    }
+
+    .tarjeta-aleatoria {
+        min-height: 140px;
+    }
+
+}
