@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: var(--fondo);
+    color: var(--negro);
+    overflow-x: hidden;
+}
+
+:root {
+    --negro: #171717;
+    --crema: #eee7d8;
+    --papel: #f8f1e3;
+}
+
+
+.neruda {
+    --fondo: #e9dfd0;
+    --principal: #c83228;
+    --secundario: #171717;
+    --contraste: #f1c94c;
+}
+
+.lorca {
+    --fondo: #d9e0e8;
+    --principal: #304f91;
+    --secundario: #171717;
+    --contraste: #d8b95e;
+}
+
+.dickinson {
+    --fondo: #e6e6d5;
+    --principal: #617b52;
+    --secundario: #253a29;
+    --contraste: #c7a66a;
+}
+
+.benedetti {
+    --fondo: #eee3b8;
+    --principal: #e4b92e;
+    --secundario: #171717;
+    --contraste: #bd3a2b;
+}
+
+.poeta-header {
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid var(--negro);
+}
+
+.poeta-header .logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.poeta-header span {
+    font-size: 10px;
+}
+
+.volver {
+    color: var(--negro);
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.volver:hover {
+    color: var(--principal);
+}
