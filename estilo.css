@@ -188,3 +188,99 @@ body {
     font-family: 'Anton', sans-serif;
     font-size: 35px;
 }
+
+.poetas {
+    padding: 90px 8%;
+}
+
+.encabezado-seccion {
+    margin-bottom: 70px;
+}
+
+.encabezado-seccion > span {
+    font-size: 11px;
+}
+
+.encabezado-seccion h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(55px, 9vw, 115px);
+    line-height: 0.9;
+    margin: 25px 0;
+}
+
+.encabezado-seccion h2 span {
+    color: var(--rojo);
+}
+
+.encabezado-seccion p {
+    font-family: 'Special Elite', monospace;
+    font-size: 15px;
+}
+
+.collage-poetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.recorte {
+    background: var(--papel);
+    padding: 12px 12px 20px;
+    border: 1px solid #c7bcaa;
+    box-shadow: 5px 7px 0 rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.recorte:hover {
+    transform: rotate(0deg) translateY(-12px);
+    z-index: 2;
+}
+
+.recorte-neruda {
+    transform: rotate(-4deg);
+}
+
+.recorte-lorca {
+    transform: rotate(3deg);
+}
+
+.recorte-dickinson {
+    transform: rotate(-2deg);
+}
+
+.recorte-benedetti {
+    transform: rotate(4deg);
+}
+
+.etiqueta {
+    display: block;
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.recorte img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.1);
+}
+
+.recorte h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    margin: 15px 0;
+    line-height: 1.1;
+}
+
+.recorte a {
+    color: var(--rojo);
+    font-size: 9px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.recorte a:hover {
+    text-decoration: underline;
+}
