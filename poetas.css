@@ -317,7 +317,11 @@ body {
     height: auto;
     object-fit: contain;
     z-index: 5;
-    border-color: var(--contraste);
+    border: 2px solid var(--contraste);
+}
+#gifvertical{
+    width: 250px;
+    height: auto;
 }
 
 .recorte-poema {
