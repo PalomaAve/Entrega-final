@@ -78,3 +78,34 @@ body {
 .volver:hover {
     color: var(--principal);
 }
+
+.poeta-header {
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid var(--negro);
+}
+
+.poeta-header .logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.poeta-header span {
+    font-size: 10px;
+}
+
+.volver {
+    color: var(--negro);
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.volver:hover {
+    color: var(--principal);
+}
