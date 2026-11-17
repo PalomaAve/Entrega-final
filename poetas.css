@@ -235,3 +235,51 @@ body {
     font-size: 15px;
     line-height: 1.5;
 }
+
+.obras {
+    padding: 90px 10%;
+}
+
+.obras h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.9;
+    margin: 30px 0 55px;
+}
+
+.libro {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 25px;
+    padding: 30px 15px;
+    border-top: 2px solid var(--negro);
+    transition: 0.3s;
+}
+
+.libro:last-child {
+    border-bottom: 2px solid var(--negro);
+}
+
+.libro:hover {
+    background: rgba(255,255,255,0.35);
+    padding-left: 30px;
+}
+
+.libro > span {
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    color: var(--principal);
+}
+
+.libro h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.libro p {
+    font-family: 'Special Elite', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 600px;
+}
