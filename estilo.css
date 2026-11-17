@@ -1,27 +1,132 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: blanchedalmond;
+    background-color: #eee7d8;
+    color: #171717;
+    font-family: 'Space Mono', monospace;
+    overflow-x: hidden;
 }
 
-#contenedorautor {
-  display: flex;
-  flex-direction: column;
-  align-items: space-around;
-  margin: 2em auto;
-  border: #ca7e4b solid 14px;
-  width: fit-content;
+:root {
+    --crema: #eee7d8;
+    --negro: #171717;
+    --rojo: #e63327;
+    --amarillo: #f3d34a;
+    --azul: #304f91;
+    --papel: #f8f1e3;
 }
 
-.imagen {
-  height: 150px;
-  width: 300px;
-  margin: 0em auto;
+.encabezado {
+    min-height: 75px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--negro);
+    gap: 20px;
+}
 
-  #boton {
-  font-size: 1.5em;
-  font-family: "Henny Penny", system-ui;
-  font-style: normal;
-  background-color:  rgb(208, 115, 9);
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  gap: 10px;
-  margin: 20px;
+.logo {
+    color: var(--negro);
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+}
+
+.encabezado nav {
+    display: flex;
+    gap: 25px;
+}
+
+.encabezado nav a {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 11px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.encabezado nav a:hover {
+    color: var(--rojo);
+}
+
+.numero-edicion {
+    font-size: 9px;
+}
+
+.portada {
+    min-height: 620px;
+    padding: 45px 9%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 3px solid var(--negro);
+}
+
+.texto-superior {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.portada h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(75px, 13vw, 175px);
+    line-height: 0.82;
+    letter-spacing: -5px;
+    max-width: 1000px;
+}
+
+.portada h1 span {
+    display: block;
+    margin-left: 18%;
+}
+
+.portada-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 45px;
+}
+
+.portada-inferior p {
+    max-width: 350px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.sello {
+    background-color: var(--amarillo);
+    border: 2px solid var(--negro);
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    transform: rotate(-12deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    box-shadow: 5px 5px var(--negro);
+}
+
+.texto-vertical {
+    position: absolute;
+    right: 3%;
+    top: 35%;
+    writing-mode: vertical-rl;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
