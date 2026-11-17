@@ -283,3 +283,78 @@ body {
     line-height: 1.8;
     max-width: 600px;
 }
+
+.fragmentos {
+    padding: 90px 10%;
+    background: var(--principal);
+    color: white;
+}
+
+.fragmentos .etiqueta-seccion {
+    color: var(--contraste);
+}
+
+.fragmentos h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.9;
+    margin: 30px 0 50px;
+}
+
+.recorte-poema {
+    background: var(--papel);
+    color: var(--negro);
+    margin: 25px auto;
+    padding: 22px;
+    max-width: 850px;
+    border: 1px solid #b5aa98;
+    box-shadow: 6px 6px rgba(0,0,0,0.2);
+    transform: rotate(-1deg);
+}
+
+.recorte-poema:nth-of-type(even) {
+    transform: rotate(1deg);
+}
+
+.recorte-poema summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-family: 'Special Elite', monospace;
+}
+
+.recorte-poema summary::-webkit-details-marker {
+    display: none;
+}
+
+.recorte-poema summary strong {
+    flex: 1;
+}
+
+.recorte-poema summary span:first-child {
+    color: var(--principal);
+    font-weight: bold;
+}
+
+.recorte-poema summary span:last-child {
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+}
+
+.contenido-poema {
+    padding: 25px 10px 10px;
+    border-top: 1px dashed #999;
+    margin-top: 20px;
+    font-family: 'Special Elite', monospace;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.contenido-poema .verso {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

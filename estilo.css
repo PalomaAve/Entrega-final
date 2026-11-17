@@ -93,6 +93,10 @@ body {
     margin-left: 18%;
 }
 
+.titulo-rojo {
+    color: var(--rojo);
+}
+
 .portada-inferior {
     display: flex;
     justify-content: space-between;
