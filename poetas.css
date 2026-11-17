@@ -182,3 +182,56 @@ body {
     margin-top: 18px;
     font-family: 'Special Elite', monospace;
 }
+
+.biografia {
+    padding: 90px 12%;
+    background: var(--secundario);
+    color: var(--crema);
+    position: relative;
+}
+
+.biografia .etiqueta-seccion {
+    color: var(--contraste);
+}
+
+.biografia h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.9;
+    margin: 35px 0;
+    color: var(--principal);
+    -webkit-text-stroke: 1px var(--crema);
+}
+
+.texto-biografia {
+    max-width: 760px;
+    margin-left: auto;
+    font-family: 'Special Elite', monospace;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.texto-biografia p {
+    margin-bottom: 22px;
+}
+
+.dato-destacado {
+    margin-top: 55px;
+    padding: 25px;
+    border: 2px dashed var(--contraste);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 480px;
+}
+
+.dato-destacado strong {
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    color: var(--contraste);
+}
+
+.dato-destacado span {
+    font-size: 15px;
+    line-height: 1.5;
+}
