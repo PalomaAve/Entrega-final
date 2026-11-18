@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e2d5;
+    color: #24221f;
+    font-family: 'Space Mono', monospace;
+    padding: 30px;
+}
+
+.encabezado-otros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #24221f;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+.encabezado-otros a,
+.pie-otros a {
+    color: #24221f;
+    text-decoration: none;
+}
+
+.contenido-otros {
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+.etiqueta {
+    color: #a43b2d;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.introduccion-otros h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: 65px;
+    margin: 15px 0;
+}
+
+.introduccion-otros > p:last-child {
+    max-width: 650px;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.rejilla-poetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.bloque-poeta {
+    background-color: #f5f0e7;
+    padding: 30px;
+    border: 1px solid #b9ad9b;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.bloque-poeta:nth-child(even) {
+    background-color: #e2d8c8;
+}
+
+.bloque-poeta:hover {
+    transform: rotate(-1deg) translateY(-5px);
+}
+
+.numero {
+    color: #a43b2d;
+    font-size: 12px;
+}
+
+.bloque-poeta h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 28px;
+    margin: 15px 0 8px;
+}
+
+.pais {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #a43b2d;
+    margin-bottom: 20px;
+}
+
+.bloque-poeta p {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.bloque-poeta .obra {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.pie-otros {
+    border-top: 2px solid #24221f;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 18px;
+    }
+
+    .encabezado-otros {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .introduccion-otros h1 {
+        font-size: 45px;
+    }
+
+    .rejilla-poetas {
+        grid-template-columns: 1fr;
+    }
+
+    .pie-otros {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
