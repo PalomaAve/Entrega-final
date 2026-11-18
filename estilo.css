@@ -95,6 +95,9 @@ body {
 
 .titulo-rojo {
     color: var(--rojo);
+    display: block;
+    -webkit-text-stroke: 1px var(--negro);
+    text-shadow: 4px 4px var(--negro);
 }
 
 .portada-inferior {
@@ -290,24 +293,24 @@ body {
 }
 
 .bestiario-juego {
-
     width: 100%;
     max-width: 100%;
     min-width: 0;
+    box-sizing: border-box;
     background: var(--papel);
     border: 3px solid var(--negro);
     box-shadow: 10px 10px var(--negro);
     padding: 40px;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 70px minmax(0, 1fr);
-    gap: 25px;
+    grid-template-columns: minmax(0, 1fr) 50px minmax(0, 1fr);
+    gap: 20px;
     align-items: center;
 }
 
 .elemento-aleatorio {
-
     width: 100%;
     min-width: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -330,9 +333,10 @@ body {
 }
 
 .tarjeta-aleatoria {
-
     width: 100%;
+    max-width: 100%;
     min-width: 0;
+    box-sizing: border-box;
     height: 300px;
     padding: 15px;
     background: var(--crema);
@@ -346,6 +350,7 @@ body {
     transform: rotate(-2deg);
     transition: 0.4s;
 }
+
 
 .tarjeta-aleatoria img {
 
@@ -426,9 +431,10 @@ body {
 
 #generarCombinacion,
 #descubrir {
-
     grid-column: 1 / -1;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 18px;
     font-family: 'Anton', sans-serif;
     font-size: 20px;
