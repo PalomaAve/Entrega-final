@@ -204,7 +204,7 @@ body {
     margin-bottom: 70px;
 }
 
-.encabezado-seccion > span {
+.encabezado-seccion span {
     font-size: 11px;
 }
 
@@ -316,14 +316,12 @@ body {
     gap: 12px;
 }
 
-
 .numero-selector {
 
     font-family: 'Anton', sans-serif;
     font-size: 40px;
     color: var(--rojo);
 }
-
 
 .etiqueta-bestiario {
 
@@ -351,7 +349,6 @@ body {
     transition: 0.4s;
 }
 
-
 .tarjeta-aleatoria img {
 
     display: block;
@@ -362,7 +359,6 @@ body {
     object-fit: contain;
     margin: 0 auto;
 }
-
 
 .tarjeta-aleatoria p {
 
@@ -378,7 +374,6 @@ body {
     font-size: 65px;
     color: var(--rojo);
 }
-
 
 .tarjeta-aleatoria.activa {
 
@@ -491,7 +486,7 @@ body {
     max-width: 750px;
 }
 
-.otros-texto > span {
+.otros-texto span {
     font-size: 11px;
     color: var(--amarillo);
 }
