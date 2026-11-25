@@ -27,3 +27,9 @@ Una vez terminé la estructura de la página de los cuatro poetas, copié el mis
 * Página de otros poetas:
 
 Para la página de otros poetas tenía claro que quería algo un poco más sencillo y que no fuera tan largo. Por esto, hice cuadros en columnas para que en cada uno hubiera un autor junto con una breve descripción de quién es y su obra más conocida. Para hacerlo, me guié de una entrega pasado en donde hice varios mini recuadros ubicados en columnas. Esta es mi sección más esperada, en esta parte es donde quiero poner a mi papá, puesto que como no tiene muchas obras, no tenía mucha información para colocar como si fuera uno de los cuatro autores principales. De primeras, coloqué a mi papá, la descripción de él y su libro más conocido: "35 míos". Todo el propósito de esta página surgió por la idea de hacer a mi papá más reconocido así sea en un trabajo de la universidad, por eso me puso feliz poderlo incluir en mi trabajo.
+
+* Detalles finales:
+
+Para finalizar con los toques finales de las páginas, quise añadir una música de fondo ambiente para que los usuarios exploren las páginas con sonidos relajantes. Corregí algunos datos de los poetas y los enlaces a las distintas páginas. Además, le pedí ayuda a Chat GPT para que me ayudara poniendo los ajustes necesarios para que la página funcione desde cualquier pantalla, ya que yo no sabía cómo hacerlo y fue una sugerencia que el profesor me dijo.
+
+24/11/2026
